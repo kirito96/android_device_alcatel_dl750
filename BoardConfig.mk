@@ -1,7 +1,7 @@
 USE_CAMERA_STUB := true
 
 # inherit from the proprietary version
--include vendor/alcatel/DL750/BoardConfigVendor.mk
+-include vendor/alcatel/dl750/BoardConfigVendor.mk
 
 # Architecture
 TARGET_ARCH := arm
@@ -14,10 +14,10 @@ TARGET_CPU_VARIANT := cortex-a7
 TARGET_CPU_SMP := true
 ARCH_ARM_HAVE_TLS_REGISTER := true
 
-TARGET_BOOTLOADER_BOARD_NAME := DL750
+TARGET_BOOTLOADER_BOARD_NAME := dl750
 
-BOARD_KERNEL_CMDLINE := 
-TARGET_PREBUILT_KERNEL := device/alcatel/DL750/prebuilt/kernel
+BOARD_KERNEL_CMdlINE := 
+TARGET_PREBUILT_KERNEL := device/alcatel/dl750/prebuilt/kernel
 BOARD_MKBOOTIMG_ARGS := --base 0x80000000 --pagesize 2048 --kernel_offset 0x00008000 --ramdisk_offset 0x04000000 --second_offset 0x00f00000 --tags_offset 0x00000100 --board B9HBI0I0AN00 --mtk 1
 
 # Partitions
@@ -26,10 +26,10 @@ BOARD_FLASH_BLOCK_SIZE := 512
 TARGET_USERIMAGES_USE_EXT4 := true
 
 BOARD_CUSTOM_BOOTIMG := true
-BOARD_CUSTOM_BOOTIMG_MK := device/alcatel/DL750/bootimg.mk
+BOARD_CUSTOM_BOOTIMG_MK := device/alcatel/dl750/bootimg.mk
 BOARD_CUSTOM_MKBOOTIMG := mtkbootimg
 
-TARGET_RECOVERY_FSTAB := device/alcatel/DL750/recovery/recovery.fstab
+TARGET_RECOVERY_FSTAB := device/alcatel/dl750/recovery/recovery.fstab
 
 
 BOARD_HAS_NO_SELECT_BUTTON := true
